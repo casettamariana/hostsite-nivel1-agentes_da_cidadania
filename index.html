@@ -7,14 +7,19 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link href="/assets/font/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+    
+  
     <style type="text/css">
 
         #index-video {
+            
             float: right;
 
             height: 100%;
 
-            width: 100%;
+            width: 80%;
 
             margin-left: 150px;
 
@@ -40,6 +45,7 @@
 
         @media (max-width: 1199px) {
             #index-video {
+            
                 float: right;
 
                 height: 100%;
@@ -85,11 +91,13 @@
     
 </head>
 <body>
+    <img id="background" src="/assets/img/background_home.png" alt="">
+
 <!-- navbar-expand-lg so vai exibir o menu em dispositivos grande(PC) -->
 <nav id="" class="navbar navbar-expand-lg navbar-light b g-light">
     <div class="container">
     <a class="navbar-brand mb-0 mr-0" href="#">
-      <img src="/assets/img/layout_hostsite/img/cge.png" width="270" height="125" alt="">
+      <img src="/assets/img/logo/Camada 5.png" width="386" height="126" alt="">
     </a>
     <button id="id-navbar-toggler" class="navbar-toggler " type="button" data-toggle="collapse" data-target="#id-navbar">
         <span class="navbar-toggler-icon border"></span>
@@ -127,7 +135,7 @@
             <div class="card-body b order">
               <h2 class="card-title">SEJA UM/A AGENTE DA CIDADANIA </h2>
               
-              <p class="h4">Colabore com o aprimoramento do controle social em Goiás. Mobilize sua cidade e proponha projetos que fortaleçam a democracia local.</p>
+              <p class="h4 text-justify">Colabore com o aprimoramento do controle social em Goiás. Mobilize sua cidade e proponha projetos que fortaleçam a democracia local.</p>
             </div>
             
           </div>
@@ -141,7 +149,7 @@
 
                 <video controls width="1080px" height="400px"  id="index-video">
         
-                    <source src="video.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+                    <source src="video-2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
         
                     <p>Seu Navegador não suporta o formato de video!</p>
         
@@ -156,6 +164,61 @@
 
 </div>
 
+  </section>
+  <section>
+    <br><br>
+ 
+    
+      <footer>
+          <div class="container-fluid">
+              <div class="row my-5 ">
+                  <div class="col-lg-4 ">
+
+                    <ul class="" style="list-style: none;">
+                        <li>
+                            <a href="https://www.facebook.com/cgegoias/" target="_blank" class="mr-3"><img src="/assets/img/icones/Facebook.png" alt="" width="32" height="32" title="Bootstrap"></a>
+                            <a href="https://www.instagram.com/cgegoias/" target="_blank" class="mr-3"><img src="/assets/img/icones/Instagram.png" alt="" width="32" height="32" title="Bootstrap"></a>
+                            <a href="https://www.instagram.com/cgegoias/" target="_blank" class="mr-3"><img src="/assets/img/icones/Twitter.png" alt="" width="32" height="32" title="Bootstrap"></a>
+                            <a href="https://www.instagram.com/cgegoias/" target="_blank" class="mr-3"><img src="/assets/img/icones/WhatsApp.png" alt="" width="32" height="32" title="Bootstrap"></a>
+                        </li>
+                       
+                    </ul>
+
+                  </div>
+                  <div class="col-lg-4 ali">
+                    <ul class="list text-right" style="list-style: none;">
+                        <li style="margin-top: 0px;"><b class="h2" style="color: floralwhite;">CONTATO:</b></li>
+                        <li><span style="font-size: 23px; color:floralwhite;">
+                            <i class="fas fa-phone"> 62 9xxxx-xxxx</i>
+                          </span>
+                        </li>
+                        <li><span style="font-size: 23px; color:floralwhite;">
+                            <i class="far fa-clock"> 08:00 ás 18:00 dias -uteis</i>
+                          </span>
+                        </li>
+                        <li><span style="font-size: 23px; color:floralwhite;" class=" ml-5">
+                            <i class="far fa-envelope">  xxxxxxxxxx@goias.gov.br</i>
+                          </span>
+                        </li>
+                        
+                    </ul>
+
+                  </div>
+                  <div class="col-lg-4">
+                    <ul class="mb-2" style="list-style: none;">
+                        <li>
+                            <a href="https://www.facebook.com/cgegoias/" target="_blank" ><img class="mb-5" src="/assets/img/logo/cge - negativo.png" alt="" width="300" height="140" title="Bootstrap"></a>
+                            
+                        </li>
+                       
+                    </ul>
+
+                  </div>
+              </div>
+              
+          </div>
+
+      </footer>
   </section>
     
     <!-- Bootstrap dependences -->
