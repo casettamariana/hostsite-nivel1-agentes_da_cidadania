@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,219 +9,106 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link href="./assets/font/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->
-    
-  
-    <style type="text/css">
+    <link href="./assets/font/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet">
+    <!--load all styles -->
 
-        #index-video {
-            
-            float: right;
-
-            height: 100%;
-
-            width: 100%;
-
-            margin-left: 50px;
-
-            border-radius: 10px;
-
-            object-fit: cover;
-
-            /* z-index: -100; */
-
-            right: 0;
-
-            bottom: 0;
-
-            background-size: cover;
-
-            overflow: hidden;
-
-            cursor: pointer;
-
-        }
-
-        @media (max-width: 1199px) {
-            #index-video {
-            
-                float: right;
-
-                height: 100%;
-
-                width: 100%;
-
-                margin-left: 0px;
-
-                border-radius: 50px;
-
-                object-fit: cover;
-
-               /*  z-index: -100; */
-
-                right: 0;
-
-                bottom: 0;
-
-                background-size: cover;
-
-                overflow: hidden;
-
-                cursor: pointer;
-
-            }
-        }
-
-
-
-        /* .index-video-wrapper {
-
-            height: 100%;
-
-            width: 100%;
-
-           
-
-            background-size: cover;
-
-        }
- */
-    </style> 
-    
 </head>
+
 <body>
-    <img id="background" src="./assets/img/background_home.png" alt="">
+    <!-- navbar-expand-lg so vai exibir o menu em dispositivos grande(PC) -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/logo/Logo_Agentes_da_Cidadania.svg" class="img-fluid" width="386" height="126"
+                    alt="Imagem logo do projeto Agentes da">
+            </a>
+            <button id="id-navbar-toggler" class="navbar-toggler " type="button" data-toggle="collapse"
+                data-target="#id-navbar">
+                <span class="navbar-toggler-icon border"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="id-navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link h5">O QUE É?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link h5 mr-auto ml-2">CRONOGRAMA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link h5 mr-2 ml-2">DOCUMENTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link h5 mr-2 ml-2">CONTEÚDOS</a>
+                    </li>
 
-<!-- navbar-expand-lg so vai exibir o menu em dispositivos grande(PC) -->
-<nav id="" class="navbar navbar-expand-lg navbar-light b g-light">
-    <div class="container">
-    <a class="navbar-brand mb-0 mr-0" href="#">
-      <img src="./assets/img/logo/agentes-da-cidadania.png" class="img-fluid" width="386" height="126" alt="">
-    </a>
-    <button id="id-navbar-toggler" class="navbar-toggler " type="button" data-toggle="collapse" data-target="#id-navbar">
-        <span class="navbar-toggler-icon border"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="id-navbar">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="" class="nav-link h4 ">O QUE É?</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link h4 mr-auto ml-2">CRONOGRAMA</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link h4 mr-2 ml-2">DOCUMENTOS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link h4 mr-2 ml-2">CONTEÚDOS</a>
-                </li>
-
-            </ul>
-    </div>
-</div>
-  </nav>
-  <section>
-     <div class="container b g-secondary">
-    <br><br>
-    <br><br>
-    
-
-    <!-- <img width="90%" src="assets/img/SEGUNDA SOBREPOSICAO.png?i=2" alt="O que queremos"  style="display: block;"/></a> -->
-    <div class="row">
-        <div class="col-md-4 b g-danger" id="id_CTA">
-        <div class="" >
-            <div class="card-body b order">
-              <h2 class="card-title">SEJA UM/A AGENTE DA CIDADANIA </h2>
-              
-              <p class="h4 text-left">Colabore com o aprimoramento do controle social em Goiás.</p>
+                </ul>
             </div>
-            
-          </div>
-          <div class="row">
-          <button type="button" class="btn btn-success btn-lg mx-auto mb-5 "><p class="h4">INSCREVA-SE</p></button>
+        </div>
+    </nav>
+    <section id="content">
+        <div class="content__inf">
+            <h2>SEJA UM/A AGENTE DA CIDADANIA!</h2>
+
+            <p class="h4 text-left">Colabore com o aprimoramento do controle social em Goiás.</p>
+
+            <button type="button" class="btn btn-success btn-lg mx-auto">
+                <p class="h4">INSCREVA-SE</p>
+            </button>
+        </div>
+        <div class="content__video">
+            <video controls width="1080px" height="400px" id="index-video">
+
+                <source src="video2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+
+                <p>Seu Navegador não suporta o formato de video!</p>
+
+            </video>
         </div>
         </div>
-        
-        <div class="col-md-8 b g-success index-video">
-            
-
-                <video controls width="1080px" height="400px"  id="index-video">
-        
-                    <source src="video2.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
-        
-                    <p>Seu Navegador não suporta o formato de video!</p>
-        
-                </video>
-              
-            
         </div>
-      </div>
-   
-    </div> 
-    <br>
+    </section>
+    <footer>
+        <ul style="list-style: none;">
+            <li>
+                <a href="https://www.facebook.com/cgegoias/" target="_blank" class="mr-3"><img
+                        src="./assets/img/icones/Facebook.png" alt="" width="32" height="32" title="Bootstrap"></a>
+                <a href="https://www.instagram.com/cgegoias/" target="_blank" class="mr-3"><img
+                        src="./assets/img/icones/Instagram.png" alt="" width="32" height="32" title="Bootstrap"></a>
+                <a href="https://www.instagram.com/cgegoias/" target="_blank" class="mr-3"><img
+                        src="./assets/img/icones/Twitter.png" alt="" width="32" height="32" title="Bootstrap"></a>
+                <a href="https://www.instagram.com/cgegoias/" target="_blank" class="mr-3"><img
+                        src="./assets/img/icones/WhatsApp.png" alt="" width="32" height="32" title="Bootstrap"></a>
+            </li>
 
-</div>
+        </ul>
+        <ul style="list-style: none;">
+            <li style="margin-top: 0px;"><b class="h4" style="color: floralwhite;">CONTATO:</b></li>
+            <li><span style="font-size: 15px; color:floralwhite;" class="">
+                    <i class="fas fa-phone"> 62 9xxxx-xxxx</i>
+                </span>
+            </li>
+            <li><span style="font-size: 15px; color:floralwhite;" class="my-3">
+                    <i class="far fa-clock"> 08:00 ás 18:00 dias -uteis</i>
+                </span>
+            </li>
+            <li><span style="font-size: 15px; color:floralwhite;" class=" ml-5 my-3">
+                    <i class="far fa-envelope"> xxxxxxxxxx@goias.gov.br</i>
+                </span>
+            </li>
+        </ul>
+        <a href="https://www.facebook.com/cgegoias/" target="_blank">
+            <img class="logo_footer" src="./assets/img/logo/cge-negativo.png" alt="Logo da Controladoria Geral do Estado de Goiás e logo do estado de goiás">
+        </a>
 
-  </section>
-  <section>
-    <br><br>
- 
-    
-      <footer>
-          <div class="container ">
-              <div class="row my-5 ">
-                  <div class="col-4 box">
+    </footer>
 
-                    <ul class="" style="list-style: none;">
-                        <li>
-                            <a href="https://www.facebook.com/cgegoias/" target="_blank" class="mr-3"><img src="./assets/img/icones/Facebook.png" alt="" width="32" height="32" title="Bootstrap"></a>
-                            <a href="https://www.instagram.com/cgegoias/" target="_blank" class="mr-3"><img src="./assets/img/icones/Instagram.png" alt="" width="32" height="32" title="Bootstrap"></a>
-                            <a href="https://www.instagram.com/cgegoias/" target="_blank" class="mr-3"><img src="./assets/img/icones/Twitter.png" alt="" width="32" height="32" title="Bootstrap"></a>
-                            <a href="https://www.instagram.com/cgegoias/" target="_blank" class="mr-3"><img src="./assets/img/icones/WhatsApp.png" alt="" width="32" height="32" title="Bootstrap"></a>
-                        </li>
-                       
-                    </ul>
-
-                  </div>
-                  <div class="col-4 box">
-                    <ul class="list text-right" style="list-style: none;">
-                        <li style="margin-top: 0px;"><b class="h2" style="color: floralwhite;">CONTATO:</b></li>
-                        <li><span style="font-size: 23px; color:floralwhite;" class="">
-                            <i class="fas fa-phone"> 62 9xxxx-xxxx</i>
-                          </span>
-                        </li>
-                        <li><span style="font-size: 23px; color:floralwhite;" class="my-3">
-                            <i class="far fa-clock my-3"> 08:00 ás 18:00 dias -uteis</i>
-                          </span>
-                        </li>
-                        <li><span style="font-size: 23px; color:floralwhite;" class=" ml-5 my-3">
-                            <i class="far fa-envelope my-3">  xxxxxxxxxx@goias.gov.br</i>
-                          </span>
-                        </li>
-                        
-                    </ul>
-
-                  </div>
-                  <div class="col-4 box">
-                    <ul class="mb-2" style="list-style: none;">
-                        <li>
-                            <a href="https://www.facebook.com/cgegoias/" target="_blank" ><img class="mb-5 img-fluid" src="./assets/img/logo/cge-negativo.png" alt="" width="300" height="140" title="Bootstrap"></a>
-                            
-                        </li>
-                       
-                    </ul>
-
-                  </div>
-              </div>
-              
-          </div>
-
-      </footer>
-  </section>
-    
     <!-- Bootstrap dependences -->
-        <!-- JQuery --><script src="./node_modules/jquery/dist/jquery.min.js"></script>
-        <!-- Popper --><script src="./node_modules/popper/index.js"></script>
-        <!-- Bootstrap --><script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- JQuery -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="./node_modules/popper/index.js"></script>
+    <!-- Bootstrap -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
